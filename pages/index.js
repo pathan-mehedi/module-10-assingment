@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Link from 'next/link';
+import Layout from '../components/Layout';
 import styles from '../styles/styles.module.scss';
 
 export default function Home() {
@@ -27,14 +27,8 @@ export default function Home() {
   };
 
   return (
-    <>
-    <header className={styles.header}>
-        <div className={styles.logo}>Counter App</div>
-        <nav className={styles.navMenu}>
-          <Link href="/">Home</Link>
-          <Link href="/AboutUs">About Us</Link>
-        </nav>
-      </header>
+    <Layout>
+    
     <div className={styles.motherContainer}>
       <div className={styles.counterContainer}>
         <h1 className={styles.head_title}>Counter 1</h1>
@@ -53,6 +47,6 @@ export default function Home() {
         </div>
       </div>
     </div>
-    </>
+    </Layout>
   );
 }

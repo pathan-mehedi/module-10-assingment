@@ -21,8 +21,6 @@
 
 8. **`next.config.js`**: Next.js configuration file.
 
-9. **`README.md`**: Project information and instructions.
-
 ---
 
 This structure ensures organization, reusability, and easy navigation within the project.

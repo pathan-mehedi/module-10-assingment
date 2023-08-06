@@ -1,19 +1,24 @@
 @import 'variables';
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: $primary-color;
   color: white;
+  z-index: 100;
 
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
   }
 
-  .nav-menu {
+  .navMenu {
     display: flex;
     gap: 20px;
 
@@ -28,6 +33,7 @@
     }
   }
 }
+
 
 .motherContainer {
   display: flex;

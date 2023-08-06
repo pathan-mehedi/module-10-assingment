@@ -1,0 +1,40 @@
+// styles.scss
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  .counter {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    padding: $button-padding;
+    font-size: $button-font-size;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: $primary-color;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
